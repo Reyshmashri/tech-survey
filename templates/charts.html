@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Analytics</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #e9d5ff, #f3e8ff, #faf5ff);
+    color: #4c1d95;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: #7c3aed;
+    font-size: 3em;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(124, 58, 237, 0.1);
+}
+
+.chart-container {
+    display: inline-block;
+    width: 80%;
+    max-width: 700px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(139, 92, 246, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chart-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(139, 92, 246, 0.3);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+a {
+    display: inline-block;
+    margin: 40px 20px;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+}
+
+a:hover {
+    background: linear-gradient(135deg, #7c3aed, #6d28d9);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>📊 Survey Analytics Dashboard</h1>
+
+<div class="chart-container">
+    <img src="/static/device_chart.png?v=1" alt="Device Usage Chart">
+</div>
+
+<div class="chart-container">
+    <img src="/static/screen_chart.png?v=1" alt="Screen Time Chart">
+</div>
+
+<div class="chart-container">
+    <img src="/static/anxiety_chart.png?v=1" alt="Anxiety Chart">
+</div>
+
+<a href="/">🏠 Back to Form</a>
+
+</body>
+</html>

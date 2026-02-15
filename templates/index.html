@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tech Dependency Survey</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+<div class="header-image">
+<img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=300&fit=crop" alt="Technology">
+</div>
+<div class="form-content">
+<h1>📱 Are Humans Becoming Too Dependent on Technology?</h1>
+<p>This survey collects opinions about human dependence on technology. Responses are anonymous.</p>
+
+<form action="/submit" method="POST" autocomplete="off">
+
+<h2>📋 Section 1: Basic Information</h2>
+
+<label>Full Name</label>
+<input type="text" name="name" placeholder="Enter your full name" required autocomplete="off">
+
+<label>Email Address</label>
+<input type="email" name="email" placeholder="Enter your email address" required autocomplete="off">
+
+<label>What is your age group?</label>
+<div class="radio-group">
+<label class="radio-option"><input type="radio" name="age_group" value="Below 18" required> Below 18</label>
+<label class="radio-option"><input type="radio" name="age_group" value="18–30" required> 18–30</label>
+<label class="radio-option"><input type="radio" name="age_group" value="31–45" required> 31–45</label>
+<label class="radio-option"><input type="radio" name="age_group" value="Above 45" required> Above 45</label>
+</div>
+
+<label>What is your current occupation?</label>
+<div class="radio-group">
+<label class="radio-option"><input type="radio" name="occupation" value="Student" required> Student</label>
+<label class="radio-option"><input type="radio" name="occupation" value="Working Professional" required> Working Professional</label>
+<label class="radio-option"><input type="radio" name="occupation" value="Self-employed" required> Self-employed</label>
+<label class="radio-option"><input type="radio" name="occupation" value="Other" required> Other</label>
+</div>
+
+<h2>⏱️ Section 2: Technology Usage Patterns</h2>
+
+<label>How much time do you spend on screens daily (excluding work/study)?</label>
+<div class="radio-group">
+<label class="radio-option"><input type="radio" name="screen_time" value="Less than 2 hours" required> Less than 2 hours</label>
+<label class="radio-option"><input type="radio" name="screen_time" value="2–4 hours" required> 2–4 hours</label>
+<label class="radio-option"><input type="radio" name="screen_time" value="4–6 hours" required> 4–6 hours</label>
+<label class="radio-option"><input type="radio" name="screen_time" value="More than 6 hours" required> More than 6 hours</label>
+</div>
+
+<label>What is your primary device for personal use?</label>
+<div class="radio-group">
+<label class="radio-option"><input type="radio" name="device" value="Smartphone" required> Smartphone</label>
+<label class="radio-option"><input type="radio" name="device" value="Laptop/Computer" required> Laptop/Computer</label>
+<label class="radio-option"><input type="radio" name="device" value="Tablet" required> Tablet</label>
+<label class="radio-option"><input type="radio" name="device" value="Smartwatch" required> Smartwatch</label>
+<label class="radio-option"><input type="radio" name="device" value="Gaming Console" required> Gaming Console</label>
+</div>
+
+<label>Do you check your phone within the first 15 minutes after waking up?</label>
+<div class="radio-group">
+<label class="radio-option"><input type="radio" name="morning_check" value="Yes" required> Yes</label>
+<label class="radio-option"><input type="radio" name="morning_check" value="No" required> No</label>
+<label class="radio-option"><input type="radio" name="morning_check" value="Sometimes" required> Sometimes</label>
+</div>
+
+<label>Do you feel anxious or uncomfortable when you don't have internet access?</label>
+<div class="radio-group">
+<label class="radio-option"><input type="radio" name="anxiety" value="Yes" required> Yes</label>
+<label class="radio-option"><input type="radio" name="anxiety" value="No" required> No</label>
+<label class="radio-option"><input type="radio" name="anxiety" value="Sometimes" required> Sometimes</label>
+</div>
+
+<h2>💭 Section 3: Your Opinion on Technology Impact</h2>
+
+<label>To what extent do you agree: "Technology has reduced face-to-face communication"</label>
+<div class="radio-group">
+<label class="radio-option"><input type="radio" name="communication" value="1" required> 1 - Strongly Disagree</label>
+<label class="radio-option"><input type="radio" name="communication" value="2" required> 2 - Disagree</label>
+<label class="radio-option"><input type="radio" name="communication" value="3" required> 3 - Neutral</label>
+<label class="radio-option"><input type="radio" name="communication" value="4" required> 4 - Agree</label>
+<label class="radio-option"><input type="radio" name="communication" value="5" required> 5 - Strongly Agree</label>
+</div>
+
+<label>To what extent do you agree: "Technology makes daily life easier and more convenient"</label>
+<div class="radio-group">
+<label class="radio-option"><input type="radio" name="ease" value="1" required> 1 - Strongly Disagree</label>
+<label class="radio-option"><input type="radio" name="ease" value="2" required> 2 - Disagree</label>
+<label class="radio-option"><input type="radio" name="ease" value="3" required> 3 - Neutral</label>
+<label class="radio-option"><input type="radio" name="ease" value="4" required> 4 - Agree</label>
+<label class="radio-option"><input type="radio" name="ease" value="5" required> 5 - Strongly Agree</label>
+</div>
+
+<label>Do you believe humans are becoming too dependent on technology?</label>
+<div class="radio-group">
+<label class="radio-option"><input type="radio" name="dependence" value="Yes" required> Yes</label>
+<label class="radio-option"><input type="radio" name="dependence" value="No" required> No</label>
+<label class="radio-option"><input type="radio" name="dependence" value="Maybe" required> Maybe</label>
+</div>
+
+<label>Do you actively try to limit your screen time or digital device usage?</label>
+<div class="radio-group">
+<label class="radio-option"><input type="radio" name="screen_limit" value="Yes" required> Yes</label>
+<label class="radio-option"><input type="radio" name="screen_limit" value="No" required> No</label>
+<label class="radio-option"><input type="radio" name="screen_limit" value="Not sure" required> Not sure</label>
+</div>
+
+<button type="submit">Submit Survey ✨</button>
+
+</form>
+</div>
+</div>
+
+</body>
+</html>
